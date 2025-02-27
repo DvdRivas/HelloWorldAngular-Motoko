@@ -1,0 +1,39 @@
+import { Component, OnInit } from '@angular/core';
+import { Injectable } from '@angular/core';
+import { environment } from '../../../../enviroments/enviroment'
+import { createActor } from '../../../../declarations/HelloWorld-MA-backend/';
+
+
+@Injectable({
+  providedIn: 'root'
+})
+
+@Component({
+  selector: 'app-names',
+  templateUrl: './names.component.html',
+  styleUrls: ['./names.component.css']
+})
+
+export class NamesComponent implements OnInit {
+  public names: string[] = [];
+
+  // Instancia tu actor
+  private motokoActor = createActor(environment.MOTOKO_CANISTER_ID, {
+    agentOptions: { host: environment.MOTOKO_CANISTER_HOST }
+  });
+
+  ngOnInit() {
+    // Carga inicial
+    this.fetchNames();
+  }
+
+  async addName(newName: string) {
+    await this.motokoActor.AddName(newName);
+    this.fetchNames();
+  }
+
+  async fetchNames() {
+    this.names = await this.motokoActor.GreetList();
+    // Deberías tener this.names con los valores
+  }
+}

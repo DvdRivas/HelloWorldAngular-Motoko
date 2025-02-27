@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "@dfinity/agent": "^2.3.0",
+    "dotenv": "^16.4.7"
+  },
+  "name": "HelloWorld-MA",
+  "scripts": {
+    "build": "npm run build --workspaces --if-present",
+    "prebuild": "npm run prebuild --workspaces --if-present",
+    "pretest": "npm run prebuild --workspaces --if-present",
+    "start": "npm start --workspaces --if-present",
+    "test": "npm test --workspaces --if-present"
+  },
+  "type": "module",
+  "workspaces": [
+    "src/HelloWorld-MA-frontend"
+  ]
+}

@@ -1,0 +1,10 @@
+<p>names works! testing</p>
+<h2>Lista de Nombres 2</h2>
+<h6>{{names}}</h6>
+<ul>
+  <li>Hola</li>
+  <li> {{names}} </li>
+  <li *ngFor="let name of names">{{ name }}</li>
+</ul>
+<input #nameInput placeholder="Ingresa un nombre" />
+<button (click)="addName(nameInput.value)">Agregar Nombre</button>
