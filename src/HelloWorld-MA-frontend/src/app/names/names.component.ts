@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Injectable } from '@angular/core';
 import { environment } from '../../../enviroments/enviroment'
 import { createActor } from '../../../../declarations/HelloWorld-MA-backend/';
+import { CommonModule } from '@angular/common';
 
 
 @Injectable({
@@ -11,6 +12,7 @@ import { createActor } from '../../../../declarations/HelloWorld-MA-backend/';
 @Component({
   selector: 'app-names',
   templateUrl: './names.component.html',
+  imports: [CommonModule],
   styleUrls: ['./names.component.css']
 })
 

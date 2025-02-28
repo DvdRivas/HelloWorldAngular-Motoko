@@ -1,4 +1,0 @@
-service : {
-  AddName: (text) -> () oneway;
-  GreetList: () -> (vec text) query;
-}
