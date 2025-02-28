@@ -1,17 +1,10 @@
 import { Actor, HttpAgent } from "@dfinity/agent";
-import { environment } from "../../HelloWorld-MA-frontend/enviroments/enviroment.js";
 
-// Imports and re-exports candid interface
-import { idlFactory } from "./HelloWorld-MA-frontend.did.js";
-export { idlFactory } from "./HelloWorld-MA-frontend.did.js";
+import { idlFactory } from "../../HelloWorld-MA-frontend/HelloWorld-MA-frontend.did";
+import { environment } from '../../../HelloWorld-MA-frontend/enviroments/enviroment'
 
-/* CANISTER_ID is replaced by webpack based on node environment
- * Note: canister environment variable will be standardized as
- * process.env.CANISTER_ID_<CANISTER_NAME_UPPERCASE>
- * beginning in dfx 0.15.0
- */
 export const canisterId = environment.MOTOKO_CANISTER_FRONTEND_ID;
-  
+
 export const createActor = (canisterId, options = {}) => {
   const agent = options.agent || new HttpAgent({ ...options.agentOptions });
 
@@ -39,3 +32,4 @@ export const createActor = (canisterId, options = {}) => {
   });
 };
 
+export const HelloWorld_MA_backend = createActor(canisterId)

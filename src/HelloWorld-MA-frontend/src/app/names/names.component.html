@@ -4,7 +4,7 @@
 <ul>
   <li>Hola</li>
   <li> {{names}} </li>
-  <li *ngFor="let name of names">{{ name }}</li>
+  <!-- <li *ngFor="let name of names">{{ name }}</li> -->
 </ul>
 <input #nameInput placeholder="Ingresa un nombre" />
 <button (click)="addName(nameInput.value)">Agregar Nombre</button>

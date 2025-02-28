@@ -1,9 +1,13 @@
 # Node
 node_modules
 
+# DFX
+.dfx/local
+
+# ENVIRONMENT
+.env
 
 # VSC
 vscode
-
 
 
