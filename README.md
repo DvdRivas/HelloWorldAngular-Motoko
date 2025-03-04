@@ -1,7 +1,9 @@
 # HelloWorldAngular-Motoko
+Breve ejemplo de la únion entre un frontend en Angular y un backend en Motoko.
 
 ## 1.- Procedimiento
-Breve ejemplo de la únion entre un frontend en Angular y un backend en Motoko. El back se creó incorporando la plantilla de un frontend en JS. Las modificaciones realizadas a partir de la existencia de los dos proyectos fue:
+El back se creó incorporando la plantilla de un frontend en JS. Las modificaciones realizadas a partir de la existencia de los dos proyectos fue:
+
 * Combinar el contenido del front y el back, en este caso se hizo en la carpeta src.
 * Dejar en la carpeta principal los archivos y documentos relacionados con la instalacion de librerias y detalles del proyecto, por ejemplo: dfx.json, package.json, etc. Si este documento ya existe en ambos es necesario mover el contenido de un archivo al otro.
 * El contenido de los archivos varias dependiendo de como se creó el proyecto, tal es el caso de uso entre vite y ng para Angular.
