@@ -43,6 +43,6 @@ Una vez realizados los ajustes necesarios, ejecutar los siguientes comandos:
 * Abrir otra terminal e ir al directorio `` cd src/HelloWorldMA-frontend `` y ejecutar `` npm start `` o `` ng serve ``
 * El modulo donde se realiza la importación de los métodos del back es en names.component.ts
 
-Es posible replicar el funcionamiento de este repositorio mediante el git clone y ejecutando solamente los ultimos comandos. 
+Es posible replicar el funcionamiento de este repositorio mediante el git clone y ejecutando solamente los comandos del punto 2. 
 Existe la posibilidad de que existan errores por dependencias las cuales es necesario instalar. 
 Se recomienda usar la herramienta de insepccion de los navegadores para identificar problemas existentes.
